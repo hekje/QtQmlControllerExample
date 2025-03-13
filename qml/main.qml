@@ -12,7 +12,7 @@ ApplicationWindow {
     // Text element to display the message
     Text {
         id: messageText
-        text: controller.message  // Bind the text to the C++ message property
+        text: controller ? controller.message : "No message available"  // Check if controller is not null - Bind the text to the C++ message property
         anchors.centerIn: parent
         anchors.top: parent.top // Align the text to the bottom of the screen
         anchors.topMargin: 50 // Set some margin from the top
