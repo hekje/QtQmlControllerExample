@@ -25,12 +25,10 @@ target_link_libraries(QtQmlControllerExample PRIVATE
 
 # Resources:
 set(QtQmlControllerExample_resource_files
-    "main.qml"
+    "qml/main.qml"
 )
 
 qt_add_resources(QtQmlControllerExample "QtQmlControllerExample"
-    PREFIX
-        "/qml"
     FILES
         ${QtQmlControllerExample_resource_files}
 )

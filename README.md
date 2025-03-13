@@ -62,7 +62,7 @@ This method provides the **latest** Qt version and extra tools like Qt Creator.
 ```
 mkdir build
 cd build
-cmake ..
+cmake .. -DCMAKE_PREFIX_PATH="<path-to-Qt>/gcc_64/lib/cmake"
 cmake --build .
 
 ```
